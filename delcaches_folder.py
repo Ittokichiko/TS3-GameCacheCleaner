@@ -41,7 +41,9 @@ def DeletesXML():
                 except:
                     print("Failed to Delete XML File or These .XML Files is Already Deleted!!!")
         if deleted_count == 0:
-            print("\nXML Files is Already Deleted!!!")
+            print("These Game is not Launched... Pls Launch Game with Mods First or without mods or These XML Files is Already Deleted!!!")
         else:
-            print("These Game is not Launched... Pls Launch Game with Mods First or without mods!!!")
+            print("This Files is Already Deleted!!!)
+            os._exit(334)
+
             os._exit(-54)
