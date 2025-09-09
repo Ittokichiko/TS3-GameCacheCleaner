@@ -31,7 +31,7 @@ def DeletesXML():
     if(CheckIfTS3IsExists_Docs() == True):
         print("Trying to Delete All XML Files...")
         deleted_count = 0
-        for file in os.listdir(ts3_pathdocs):
+        for file in os.listdir(ts3_pathdocs + "*.xml"):
             filep = os.path.join(ts3_pathdocs, file)
             if(os.path.isfile(filep)):
                 try:
@@ -47,3 +47,4 @@ def DeletesXML():
             os._exit(334)
 
             os._exit(-54)
+
