@@ -3,8 +3,8 @@ import shutil
 caches = ["IGACache", "WorldCaches", "DCCache", "DCBackup"] # Maybe will need to Delete DCBackup!!! Idk!!!
 def GetTheSims3Path_Documents():
     docs = os.path.join(os.path.expanduser("~"), "Documents")
-    sims3_path = os.path.join(docs, "Electronic Arts", "The Sims 3")
-    return sims3_path
+    sims3_path_docs = os.path.join(docs, "Electronic Arts", "The Sims 3")
+    return sims3_path_docs
 
 def CheckIfTS3IsExists_Docs():
     if not os.listdir(GetTheSims3Path_Documents()):
@@ -47,5 +47,6 @@ def DeletesXML():
             os._exit(334)
 
             os._exit(-54)
+
 
 
